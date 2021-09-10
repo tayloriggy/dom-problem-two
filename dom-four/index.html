@@ -11,20 +11,14 @@
 <body>
     <form>
         <label for="heroes">Pick your superhero</label>
-        <select id="superhero">
+        <select id="superhero" onchange="getHero()">
             <option value="Thor">Thor</option>
             <option value="Iron Man">Iron Man</option>
             <option value="Captain America">Captain America</option>
         </select>
         <br><br>
     </form>
-    <p id="super">
-        <button type="button" onclick="getHero()">Submit</button>
-    </p>
     
-
-
-
     <script src="script.js"></script>
 </body>
 </html>

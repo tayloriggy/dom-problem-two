@@ -1,15 +1,17 @@
-var heroes = ["Thor", "Iron Man", "Captain America"];
-var newHeroes = heroes.map(getHero);
-newHeroes.join("Thor, Iron Man, Captain America");
-
-
 function getHero() {
-    let select = document.getElementById("superhero");
-    let text = select.options[select.selectedIndex].text;
-    console.log(text);
-    alert("Thor, Iron Man, Captain America");
+    let select = document.getElementById('superhero');
+    let optionValues = [];
+    for (let i = 0; i <select.options.length; i++) {
+        optionValues.push(select.options[i].value);
+    }
+
+    alert(optionValues.join(", "));
+    alert("There are three options to choose from.");
 }
 
-getHero();
+
+
+
+
 
 
